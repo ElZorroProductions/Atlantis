@@ -1,0 +1,167 @@
+*{font-family:Arial !important; scroll-behavior: smooth;}
+header {
+    padding: 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #fff;
+}
+
+#head{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#logoHead {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.restHead {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    padding: 15px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font: 13px 'Roboto', sans-serif;
+}
+
+.restHead a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+.restHead a:hover::after {
+    width: 100%;
+}
+
+#logo{
+    height: 100px;
+}
+
+body{
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;   
+}
+
+section {
+    height: 90vh;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sinopsis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+
+#map {
+    margin-right: 20px;
+    height: 500px;
+    width: 500px;
+    flex-shrink: 0;
+    margin-right: 40px;
+}
+
+#text-container {
+    max-width: 600px; 
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+
+#ficha-tecnica {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    top:-100px;
+    left: 350px;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+.clone {
+    display: none;
+}
+
+.text-content {
+    position: relative;
+    top: 330px;
+    margin-top: 0;
+    font: 20px Arial;
+}
+
+#player {
+    pointer-events: none;
+    height: 400px;
+    width: 40%; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center;
+}
+
+#portomarin2 {
+    margin-top: 300px;
+    display: flex; justify-content: space-around; align-items: flex-start; padding: 20px; font-family: Arial, sans-serif;
+}
+
+#text-portomarin, #text-reparto {
+    width: 55%; font-size: 1.3em; line-height: 1.7; text-align: justify;
+}
+
+#contacto2 {
+    margin-top: 300px;
+    height: 55vh;
+    display: flex; justify-content: space-around; align-items: flex-start; padding: 20px; font-family: Arial, sans-serif;
+}
+
+#text-contacto{
+    margin-left: 18%;
+    font-size: 1.4em;
+    line-height: 1.9;
+}
+
+#zorroT {
+    margin-top:-120px;
+}
